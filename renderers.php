@@ -4,7 +4,7 @@ defined('MOODLE_INTERNAL') || die();
 
 require_once($CFG->dirroot . '/course/renderer.php');
 
-class theme_ktt_boost_child_core_course_renderer extends core_course_renderer {
+class theme_ktt_boost_child_som_core_course_renderer extends core_course_renderer {
     /**
      * Renders HTML to display one course module in a course section
      *

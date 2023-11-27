@@ -20,7 +20,7 @@
     }
 }
 
-@mixin brk711 {
+@mixin brk713 {
     @media only screen and (max-width: 711px) {
         @content;
     }

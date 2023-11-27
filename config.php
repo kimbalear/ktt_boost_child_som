@@ -51,9 +51,11 @@ $THEME->hidefromselector = false;
 // This is the function that returns the SCSS source for the main file in our theme. We override the boost version because
 // we want to allow presets uploaded to our own theme file area to be selected in the preset list.
 $THEME->scss = function($theme) {
-    return theme_ktt_boost_child_get_main_scss_content($theme);
+    return theme_ktt_boost_child_som_get_main_scss_content($theme);
 };
-
+//version 4.2
+$THEME->haseditswitch = true;
+//---------------------------
 $THEME->layouts = [
     // Most backwards compatible layout without the blocks.
     'base' => array(

@@ -105,7 +105,7 @@ $templatecontext = [
     'overflow' => $overflow,
     'headercontent' => $headercontent,
     'addblockbutton' => $addblockbutton,
-    'imagegirlpower_footer' => $OUTPUT->image_url('eswatini/girlPower_Footer', 'theme')
+    'imagegmaveric' => $OUTPUT->image_url('ou_img/psi-somalia', 'theme_ktt_boost_child_som')
 ];
 
 echo $OUTPUT->render_from_template('theme_boost/drawers', $templatecontext);

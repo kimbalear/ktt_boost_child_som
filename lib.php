@@ -6,7 +6,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 // We will add callbacks here as we add features to our theme.
-function theme_ktt_boost_child_get_main_scss_content($theme) {
+function theme_ktt_boost_child_som_get_main_scss_content($theme) {
     global $CFG;
 
     $scss = '';
@@ -36,7 +36,7 @@ function theme_ktt_boost_child_get_main_scss_content($theme) {
     return $pre . "\n" . $scss . "\n" . $post;
 }
 
-function ktt_boost_child_extend_navigation(global_navigation $navigation) {
+function ktt_boost_child_som_extend_navigation(global_navigation $navigation) {
     $url_contact = new moodle_url('/theme/ktt_boost_child_som/pages/contact.php');
     $url_about = new moodle_url('/theme/ktt_boost_child_som/pages/about.php');
     

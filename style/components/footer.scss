@@ -6,14 +6,15 @@
 
     .myFooter_wrp {
         display: grid;
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: 1fr auto;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: 1fr repeat(2, auto);
         gap: 8px 8px;
         grid-auto-flow: row;
         max-width: 814px;
         margin: 0 auto;
         grid-template-areas:
             "footer_logo footer_menu1 footer_menu2"
+            "psi_esw psi_esw psi_esw"
             "footer_cr footer_cr footer_cr";
 
         @include media_580 {
@@ -22,6 +23,7 @@
             grid-template-areas:
                 "footer_logo footer_logo"
                 "footer_menu1 footer_menu2"
+                "psi_esw psi_esw psi_esw"
                 "footer_cr footer_cr";
         }
 
@@ -32,8 +34,8 @@
 
             .logo {
                 margin-top: 1em;
-                width: 100%;
-                height: auto;
+                width: auto;
+                height: 132px;
             }
         }
 
@@ -55,8 +57,18 @@
             }
         }
 
+        .psi_esw {
+            grid-area: psi_esw;
+            color: $mav_primary;
+            
+            @include media_580 {
+                justify-self: center;
+            }
+        }
+
         .footer_menu1,
-        .footer_menu2 {
+        .footer_menu2,
+        .psi_esw {
             h3 {
                 margin-bottom: 12px;
                 font-size: 1em;

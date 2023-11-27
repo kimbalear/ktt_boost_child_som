@@ -10,10 +10,10 @@ defined('MOODLE_INTERNAL') || die();
 if ($ADMIN->fulltree) {
 
     // Boost provides a nice setting page which splits settings onto separate tabs. We want to use it here.
-    $settings = new theme_boost_admin_settingspage_tabs('themesettingktt_boost_child', get_string('configtitle', 'theme_ktt_boost_child_som'));
+    $settings = new theme_boost_admin_settingspage_tabs('themesettingktt_boost_child_som', get_string('configtitle', 'theme_ktt_boost_child_som'));
 
     // Each page is a tab - the first is the "General" tab.
-    $page = new admin_settingpage('theme_ktt_boost_child_general', get_string('generalsettings', 'theme_ktt_boost_child_som'));
+    $page = new admin_settingpage('theme_ktt_boost_child_som_general', get_string('generalsettings', 'theme_ktt_boost_child_som'));
 
     // Replicate the preset setting from boost.
     $name = 'theme_ktt_boost_child_som/preset';
@@ -61,7 +61,7 @@ if ($ADMIN->fulltree) {
     $settings->add($page);
 
     // Advanced settings.
-    $page = new admin_settingpage('theme_ktt_boost_child_advanced', get_string('advancedsettings', 'theme_ktt_boost_child_som'));
+    $page = new admin_settingpage('theme_ktt_boost_child_som_advanced', get_string('advancedsettings', 'theme_ktt_boost_child_som'));
 
     // Raw SCSS to include before the content.
     $setting = new admin_setting_configtextarea('theme_ktt_boost_child_som/scsspre',
