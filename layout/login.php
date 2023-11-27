@@ -32,7 +32,7 @@ $templatecontext = [
     'sitename' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
     'output' => $OUTPUT,
     'bodyattributes' => $bodyattributes,
-    'imagbk' => $OUTPUT->image_url('imgs/img14', 'theme_ktt_boost_child')
+    'imagbk' => $OUTPUT->image_url('imgs/img14', 'theme_ktt_boost_child_som')
 ];
 
 echo $OUTPUT->render_from_template('theme_boost/login', $templatecontext);

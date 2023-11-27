@@ -1,4 +1,4 @@
-# moodle-theme_ktt_boost_child
+# moodle-theme_ktt_boost_child_som
 
 https://eswatini.moodle.solidlines.io/
 
@@ -57,14 +57,14 @@ cd /bitnami/moodle
 ls
 
 docker ps
-docker cp C:\GitHubRepositories\kimbalear\ktt_boost_child_SOM moodle411-moodle-1:/bitnami/moodle/theme/ktt_boost_child_SOM
+docker cp C:\GitHubRepositories\kimbalear\ktt_boost_child_som moodle411-moodle-1:/bitnami/moodle/theme/ktt_boost_child_som
 
 docker exec -it  moodle411-moodle-1 bash
-ls -l /bitnami/moodle/theme/ktt_boost_child_SOM
+ls -l /bitnami/moodle/theme/ktt_boost_child_som
 
 ### del directory
 
-docker exec  moodle411-moodle-1 rm -r /bitnami/moodle/theme/ktt_boost_child_SOM
+docker exec moodle411-moodle-1 rm -r /bitnami/moodle/theme/ktt_boost_child_som
 
 ## Testing
-http://localhost/theme/ktt_boost_child_SOM/test.php
+http://localhost/theme/ktt_boost_child_som/test.php

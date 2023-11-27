@@ -5,9 +5,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 // A description shown in the admin theme selector.
-$string['choosereadme'] = 'Theme ktt_boost_child_SOM is a child theme of Boost. It adds the ability to upload background photos.';
+$string['choosereadme'] = 'Theme ktt_boost_child_som is a child theme of Boost. It adds the ability to upload background photos.';
 // The name of our plugin.
-$string['pluginname'] = 'ktt_boost_child_SOM theme';
+$string['pluginname'] = 'ktt_boost_child_som theme';
 // We need to include a lang string for each block region.
 $string['region-side-pre'] = 'Right';
 // The name of the second tab in the theme settings.
@@ -17,7 +17,7 @@ $string['brandcolor'] = 'Brand colour';
 // The brand colour setting description.
 $string['brandcolor_desc'] = 'The accent colour.';
 // Name of the settings pages.
-$string['configtitle'] = 'ktt_boost_child_SOM settings';
+$string['configtitle'] = 'ktt_boost_child_som settings';
 // Name of the first settings tab.
 $string['generalsettings'] = 'General settings';
 // Preset files setting.
