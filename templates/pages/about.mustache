@@ -1,0 +1,183 @@
+{{> theme_boost/head }}
+
+<body {{{ bodyattributes }}}>
+{{> core/local/toast/wrapper}}
+<div id="page-wrapper" class="d-print-block">
+
+    {{{ output.standard_top_of_body_html }}}
+
+    {{> theme_boost/navbar }}
+    {{#courseindex}}
+        {{< theme_boost/drawer }}
+            {{$id}}theme_boost-drawers-courseindex{{/id}}
+            {{$drawerclasses}}drawer drawer-left {{#courseindexopen}}show{{/courseindexopen}}{{/drawerclasses}}
+            {{$drawercontent}}
+                {{{courseindex}}}
+            {{/drawercontent}}
+            {{$drawerpreferencename}}drawer-open-index{{/drawerpreferencename}}
+            {{$drawerstate}}show-drawer-left{{/drawerstate}}
+            {{$tooltipplacement}}right{{/tooltipplacement}}
+            {{$closebuttontext}}{{#str}}closecourseindex, core{{/str}}{{/closebuttontext}}
+        {{/ theme_boost/drawer}}
+    {{/courseindex}}
+    {{#hasblocks}}
+        {{< theme_boost/drawer }}
+            {{$id}}theme_boost-drawers-blocks{{/id}}
+            {{$drawerclasses}}drawer drawer-right{{#blockdraweropen}} show{{/blockdraweropen}}{{/drawerclasses}}
+            {{$drawercontent}}
+                <section class="d-print-none" aria-label="{{#str}}blocks{{/str}}">
+                    {{{ addblockbutton }}}
+                    {{{ sidepreblocks }}}
+                </section>
+            {{/drawercontent}}
+            {{$drawerpreferencename}}drawer-open-block{{/drawerpreferencename}}
+            {{$forceopen}}{{#forceblockdraweropen}}1{{/forceblockdraweropen}}{{/forceopen}}
+            {{$drawerstate}}show-drawer-right{{/drawerstate}}
+            {{$tooltipplacement}}left{{/tooltipplacement}}
+            {{$drawercloseonresize}}1{{/drawercloseonresize}}
+            {{$closebuttontext}}{{#str}}closeblockdrawer, core{{/str}}{{/closebuttontext}}
+        {{/ theme_boost/drawer}}
+    {{/hasblocks}}
+    <div id="page" data-region="mainpage" data-usertour="scroller" class="drawers {{#courseindexopen}}show-drawer-left{{/courseindexopen}} {{#blockdraweropen}}show-drawer-right{{/blockdraweropen}} drag-container">
+        <div class="wrapper_home">
+
+        <section class="row">
+            <div class="col-12 pt-3 pb-3">
+                <div class="card ktt_style-card">
+                    <div class="card-body">
+                        <h2>{{myname}}.</h2>
+                        <span>Override y herencia !</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+        <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent viverra mauris quis nulla tincidunt, non interdum eros elementum. Vivamus pharetra dapibus arcu. Pellentesque vel finibus nisl, quis laoreet felis. Maecenas convallis rhoncus venenatis. Quisque nisi ex, imperdiet ut nibh a, pellentesque ornare justo. Fusce hendrerit sollicitudin placerat. Quisque sit amet ornare tellus. Etiam turpis nulla, dapibus eu aliquet quis, porta id purus. Donec blandit enim in vulputate egestas. Mauris facilisis tellus non ante eleifend tempus. Cras aliquam sed lectus id consectetur. Vivamus quis pellentesque justo, placerat luctus lorem. Quisque at turpis et libero scelerisque condimentum sit amet sed mauris. Vivamus ornare, odio et volutpat dignissim, nisi est congue est, eget hendrerit urna tellus eget orci. Curabitur lobortis lacinia neque, nec rhoncus est ullamcorper quis.</p>
+
+        <p>Vestibulum malesuada porttitor nunc, non tempor turpis. Aliquam maximus ex enim, sit amet hendrerit sapien varius at. Curabitur sodales scelerisque rhoncus. Vivamus feugiat orci elit, ac interdum magna faucibus ut. Sed faucibus justo elit, vitae tristique nisi feugiat ac. Maecenas tristique risus vitae ligula dapibus condimentum. Donec quis ligula euismod, congue justo luctus, sodales orci. Praesent sit amet fermentum velit. Donec volutpat ligula in faucibus porta. In scelerisque vestibulum ullamcorper. Curabitur sit amet sollicitudin urna. Nullam sed pretium augue, tincidunt venenatis ante. Duis semper eros ipsum, et euismod turpis sollicitudin eget. In vulputate, justo quis eleifend mattis, nulla eros congue lectus, eu interdum nulla risus et sapien. Cras sed ipsum dui.</p>
+
+        <p>Vivamus sed varius nisi. Praesent semper libero vitae ex vehicula porta. Nam sodales non mi quis faucibus. Etiam fermentum ac elit sit amet rutrum. Quisque laoreet, lacus at sodales tincidunt, velit ante sagittis nulla, egestas iaculis velit risus accumsan mauris. Ut a ligula sed quam mollis sodales. Donec non dictum orci, ut rhoncus ipsum.</p>
+
+        <p>Maecenas mollis tortor ipsum, in finibus turpis consequat at. Nam sollicitudin a libero sit amet venenatis. Nullam ut tortor augue. Maecenas sit amet venenatis ipsum. Etiam congue tristique dolor, non viverra diam varius volutpat. Cras porttitor ullamcorper nunc, eget tempus ipsum dignissim ac. In vel elit eu mauris accumsan facilisis. Praesent eget arcu maximus, ullamcorper felis pretium, rutrum orci. Sed ac egestas magna. Duis eleifend vulputate magna in luctus. Sed eu facilisis augue, quis fermentum arcu.</p>
+
+        <p>Sed a orci at ante venenatis blandit sed quis ligula. Cras sodales vel turpis sed malesuada. Nunc vel nisl lorem. Aliquam sit amet enim maximus orci varius condimentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras blandit erat quis eros pulvinar, id porta nunc pretium. Curabitur mollis urna ante, pellentesque vulputate ex congue id. Nullam cursus orci sed pellentesque luctus. In hac habitasse platea dictumst. Mauris rhoncus, justo in congue lacinia, ipsum turpis lacinia tortor, vel ullamcorper lacus ligula et mauris. Pellentesque quis pellentesque elit. Sed rutrum sodales aliquet. In sit amet nunc augue. Etiam fermentum posuere dui ac finibus.</p>
+        </div>
+        <div id="topofscroll" class="main-inner">
+            <div class="drawer-toggles d-flex">
+                {{#courseindex}}
+                    <div class="drawer-toggler drawer-left-toggle open-nav d-print-none">
+                        <button
+                            class="btn icon-no-margin"
+                            data-toggler="drawers"
+                            data-action="toggle"
+                            data-target="theme_boost-drawers-courseindex"
+                            data-toggle="tooltip"
+                            data-placement="right"
+                            title="{{#str}}opendrawerindex, core{{/str}}"
+                        >
+                            <span class="sr-only">{{#str}}opendrawerindex, core{{/str}}</span>
+                            {{#pix}} t/index_drawer, moodle {{/pix}}
+                        </button>
+                    </div>
+                {{/courseindex}}
+                {{#hasblocks}}
+                    <div class="drawer-toggler drawer-right-toggle ml-auto d-print-none">
+                        <button
+                            class="btn icon-no-margin"
+                            data-toggler="drawers"
+                            data-action="toggle"
+                            data-target="theme_boost-drawers-blocks"
+                            data-toggle="tooltip"
+                            data-placement="right"
+                            title="{{#str}}opendrawerblocks, core{{/str}}"
+                        >
+                            <span class="sr-only">{{#str}}opendrawerblocks, core{{/str}}</span>
+                            <span class="dir-rtl-hide">{{#pix}}t/blocks_drawer, core{{/pix}}</span>
+                            <span class="dir-ltr-hide">{{#pix}}t/blocks_drawer_rtl, core{{/pix}}</span>
+                        </button>
+                    </div>
+                {{/hasblocks}}
+            </div>
+            {{{ output.full_header }}}
+            {{#secondarymoremenu}}
+                <div class="secondary-navigation d-print-none">
+                    {{> core/moremenu}}
+                </div>
+            {{/secondarymoremenu}}
+            <div id="page-content" class="pb-3 d-print-block">
+                <div id="region-main-box">
+                    {{#hasregionmainsettingsmenu}}
+                    <div id="region-main-settings-menu" class="d-print-none">
+                        <div> {{{ regionmainsettingsmenu }}} </div>
+                    </div>
+                    {{/hasregionmainsettingsmenu}}
+                    <section id="region-main" aria-label="{{#str}}content{{/str}}">
+
+                        {{#hasregionmainsettingsmenu}}
+                            <div class="region_main_settings_menu_proxy"></div>
+                        {{/hasregionmainsettingsmenu}}
+                        {{{ output.course_content_header }}}
+                        {{#headercontent}}
+                            {{> core/activity_header }}
+                        {{/headercontent}}
+                        {{#overflow}}
+                            <div class="container-fluid tertiary-navigation">
+                                <div class="navitem">
+                                    {{> core/url_select}}
+                                </div>
+                            </div>
+                        {{/overflow}}
+                        {{{ output.main_content }}}
+                        {{{ output.activity_navigation }}}
+                        {{{ output.course_content_footer }}}
+
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="myFooter">
+            <div class="myFooter_wrp">
+                <div class="footer_logo">
+                    <img src="{{{imagegirlpower}}}" class="logo">
+                </div>
+                <div class="footer_menu1">
+                    <div class="footer-menu">
+                        <h3>MAIN MENU</h3>
+                        <ul>
+                        <li><a href="https://eswatini.moodle.solidlines.io">Home</a></li>
+                        <li><a href="https://eswatini.moodle.solidlines.io/local/staticpage/view.php?page=contact">Contact Us</a></li>
+                        <li><a href="https://eswatini.moodle.solidlines.io/local/staticpage/view.php?page=about">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_menu2">
+                    <div class="footer-menu">
+                        <h3>USEFUL LINKS</h3>
+                        <ul>
+                        <li><a href="https://eswatini.moodle.solidlines.io/local/staticpage/view.php?page=privacy_policy">Privacy Policy</a></li>
+                        <li><a href="https://eswatini.moodle.solidlines.io/local/staticpage/view.php?page=privacy_policy">Terms of Use</a></li>
+                        <li><a href="#">Service status</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_cr">
+                    <p>Copyright © 2023. Eswatini. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        {{> theme_boost/footer }}
+    </div>
+    {{{ output.standard_after_main_region_html }}}
+</div>
+
+</body>
+</html>
+{{#js}}
+M.util.js_pending('theme_boost/loader');
+require(['theme_boost/loader', 'theme_boost/drawer'], function(Loader, Drawer) {
+    Drawer.init();
+    M.util.js_complete('theme_boost/loader');
+});
+{{/js}}

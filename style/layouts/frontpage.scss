@@ -1,0 +1,94 @@
+#page-content {
+    background-color: $bk;
+}
+
+.section .activity .activityinstance {
+    min-width: 10%;
+}
+
+#page.drawers {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.wrapper_home {
+    width: 100%;
+    max-width: 814px;
+    padding: 0 8px;
+    margin: 0 auto;
+
+    .sec1,
+    .sec2 {
+        min-height: 300px;
+    }
+
+    .sec1 {
+        background-color: #99f;
+
+    }
+
+    .sec2 {
+        background-color: #f99;
+
+
+    }
+
+    .panel_logos {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 22%));
+        grid-gap: 20px;
+        margin: 50px auto;
+        padding: 0;
+        justify-content: center;
+
+        @include media_515 {
+            width: 70%;
+            grid-template-columns: repeat(auto-fit, 30%);
+        }
+
+        .logo_p {
+            .logo {
+                margin-top: 1em;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+/*
+.frontpage-course-list-enrolled {
+    .coursebox {
+        float: left;
+        width: calc(50% - 4px);
+    }
+
+    .first {
+        margin-right: 4px;
+    }
+
+    .last {
+        margin-left: 4px;
+    }
+
+    .content {
+        .d-flex {
+            .courseimage { }
+
+            .flex-grow-1 {
+                .summary {
+                    .no-overflow {
+                        p {
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            width: 200px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+*/
