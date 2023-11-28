@@ -101,6 +101,8 @@ TOKEN
 * Habilitar protocolos
 * Crear un usuario especifico: Se precisa un usuario de servicios web para representar el sistema que controla moodle.
 
+//$("#login").remove();
+
 ec2-user
 sudo -su root
 sudo mv /home/ec2-user/moodle/theme/ktt_boost_child_som /var/www/html/moodle/theme

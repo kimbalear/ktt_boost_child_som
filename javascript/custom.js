@@ -146,11 +146,7 @@ require(["jquery"], function ($) {
         console.log("Algo salió mal al cargar los scripts");
       });
 
-    $("#login").remove();
-
-    //$('li[data-key="myhome"]').hide();
-    //$('li[data-key="mycourses"]').hide();
-    //$('li[data-key="siteadminnode"]').hide();
+    //$("#login").remove();
 
     $("#page-header").remove();
 
