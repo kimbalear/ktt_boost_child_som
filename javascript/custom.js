@@ -82,7 +82,7 @@ require(["jquery"], function ($) {
                   ""
                 );
               var courseUrl =
-                "http://localhost:8080/course/view.php?id=" + course.id;
+                "http://13.245.229.140/course/view.php?id=" + course.id;
 
               // Logs para depuración
               console.log("ID :" + course.id)
