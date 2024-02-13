@@ -37,18 +37,35 @@ $string['rawscsspre'] = 'Raw initial SCSS';
 // Raw initial SCSS setting help text.
 $string['rawscsspre_desc'] = 'In this field you can provide initialising SCSS code, it will be injected before everything else. Most of the time you will use this setting to define variables.';
 
-//custom page
-$string['contact_title'] = 'Título de la contact';
-$string['contact_heading'] = 'Encabezado de la contact';
+// home
+$string['home_slid1_title'] = 'Quality Knowledge';
+$string['home_slid1_subTitle'] = 'for better healthcare';
 
-$string['about_title'] = 'Título de la about';
-$string['about_heading'] = 'Encabezado de la about';
+$string['home_slid2_title'] = 'A sustainable and coordinated approach';
+$string['home_slid2_subTitle'] = 'to remote capacity building';
 
-$string['privacy_title'] = 'Título de la privacy';
-$string['privacy_heading'] = 'Encabezado de la privacy';
+$string['home_slid3_title'] = 'A sustainable and coordinated';
+$string['home_slid3_subTitle'] = 'approach to remote capacity building';
 
-$string['terms_title'] = 'Título de la terms';
-$string['terms_heading'] = 'Encabezado de la terms';
+$string['home_slid4_title'] = 'Lorem ipsum dolor sit amet';
+$string['home_slid4_subTitle'] = 'Nullam bibendum est ex, nec commodo nibh';
 
-$string['service_title'] = 'Título de la service';
-$string['service_heading'] = 'Encabezado de la service';
+$string['home_slid5_title'] = 'Quality knowledge for better health care';
+$string['home_slid5_subTitle'] = 'Nullam bibendum est ex, nec commodo nibh';
+
+// Footer
+
+$string['footer_titleMenu1'] = 'Pages';
+$string['footer_menu1Item1'] = 'Home';
+$string['footer_menu1Item2'] = 'Contact';
+$string['footer_menu1Item3'] = 'About';
+
+$string['footer_titleMenu2'] = 'USEFUL LINKS';
+$string['footer_menu2Item1'] = 'Privacy Policy';
+$string['footer_menu2Item2'] = 'Terms';
+
+$string['footer_orgData'] = 'POPULATION SERVICES INTERNATIONAL SOMALIA | ';
+$string['footer_contactNumberLb'] = 'Call:';
+
+$string['footer_links'] = '';
+$string['footer_CPRS'] = '2024 - Somalia.';

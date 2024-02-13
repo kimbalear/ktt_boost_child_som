@@ -1,6 +1,6 @@
 # moodle-theme_ktt_boost_child_som
 
-http://13.245.229.140/
+/
 
 ## Moodle docs
 
