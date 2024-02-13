@@ -72,7 +72,6 @@ http://localhost/theme/ktt_boost_child_som/test.php
 * static page
 
 TOKEN
-786b2d70191e8e690e6c3b4ac7045a45
 
 # Implementation
 ## Files involved
